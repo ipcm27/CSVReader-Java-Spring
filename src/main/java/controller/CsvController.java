@@ -39,7 +39,7 @@ public class CsvController {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new ResponseMessage(message));
     }
 
-    @GetMapping("/Sumarry")
+    @GetMapping("/Summary")
     public ResponseEntity<List<SummaryLineCsv>> getAllTutorials() {
         try {
             List<SummaryLineCsv> summaryTableCSV = fileService.getSummary();
